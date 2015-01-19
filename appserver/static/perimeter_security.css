@@ -1,0 +1,150 @@
+/* Zone Status Cell Highlighting */
+
+#zone_status .panel-footer,
+#zone_status .panel-head,
+#zone_status .splunk-paginator,
+#zone_status thead,
+#system_status .panel-footer,
+#system_status .panel-head,
+#system_status .splunk-paginator,
+#system_status thead
+{
+	display: none !important;
+}
+
+#panel1 .dashboard-panel,
+#panel2 .dashboard-panel
+{
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#zone_status,
+#zone_status table,
+#zone_status th,
+#zone_status td,
+#zone_status tr,
+#zone_status tbody,
+#system_status,
+#system_status table,
+#system_status th,
+#system_status td,
+#system_status tr,
+#system_status tbody
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #fff;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#zone_status table {
+	table-layout: fixed;	
+}
+
+#zone_status td {
+	width: 2%;
+}
+
+/* Display Results Nicely */
+.zone_statusbox {
+	font-family: Roboto, Droid, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 8px 4px;
+	margin: 0 3px;
+}
+
+td:first-child .zone_statusbox {
+	margin-left: 0;
+}
+td:last-child .zone_statusbox {
+	margin-right: 0;
+}
+
+.zone_statusbox span {
+	display: block;
+	font-weight: 200;
+}
+
+.zone_title {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.zone_statustext {
+	padding: 10px 5px;
+	font-size: 28px;
+}
+
+#zone_status .zone_statustext {
+	text-transform: uppercase;
+}
+
+#system_status .zone_statustext {
+	text-align: center;
+}
+
+.zone_closed {
+	background-color: #27ae60; 
+	border-top: 5px solid #1a8e4b;
+	color: #fff;
+}
+
+.zone_open {
+	background: #c61931 url('stripe.png') repeat-x;
+	background-size: contain;
+	border-top: 5px solid #9f0f23;
+	color: #fff;
+}
+
+.system_disarmed {
+	background: #5379af url('stripe.png') repeat-x;
+	border-top: 5px solid #365d93;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 30px 0;
+}
+
+.system_armed {
+	background: #f7902b url('stripe.png') repeat-x;
+	background-size: contain;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 5px solid #d4700d;
+	color: #fff;
+	padding: 30px 0;
+}
+
+
+
+/* Pulsing color effect for open zones */
+@-webkit-keyframes pulseClosed {
+	0% {
+		background: #27ae60;
+	};
+	50% {
+		background: #1a8e4b;
+	};
+	100% {
+		background: #27ae60;
+	};
+}
+
+@-webkit-keyframes pulseOpen {
+	0% {
+		background: #c61931;
+	};
+	50% {
+		background: #9f0f23;
+	};
+	100% {
+		background: #c61931;
+	};
+}
+
+
+
+
+

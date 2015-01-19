@@ -1,0 +1,18 @@
+zone,zone_name,zone_priority,zone_active
+ZONE00,First Zone,0,true
+ZONE01,Second Zone,1,true
+ZONE02,Third Zone,2,true
+ZONE03,Fourth Zone,3,true
+ZONE04,undefined,0,false
+ZONE05,undefined,0,false
+ZONE06,undefined,0,false
+ZONE07,undefined,0,false
+ZONE08,undefined,0,false
+ZONE09,undefined,0,false
+ZONE10,undefined,0,false
+ZONE11,undefined,0,false
+ZONE12,undefined,0,false
+ZONE13,undefined,0,false
+ZONE14,undefined,0,false
+ZONE15,undefined,0,false
+ZONE16,undefined,0,false

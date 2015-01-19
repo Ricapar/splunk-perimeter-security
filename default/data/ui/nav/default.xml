@@ -1,0 +1,8 @@
+<nav search_view="search" color="#c61931">
+  <view name="overview" default="true" />
+  <view name="access" />
+  <view name="alarm_state" />
+  
+  <view name="search" />
+  <view name="alerts" />
+</nav>

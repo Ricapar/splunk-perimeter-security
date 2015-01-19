@@ -1,0 +1,28 @@
+<form>
+  <label>Change Alarm State</label>
+  <fieldset submitButton="true">
+    <input type="dropdown" token="state" searchWhenChanged="false">
+      <label>Alarm State</label>
+      <choice value="enabled">Enabled</choice>
+      <choice value="disabled">Disabled</choice>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <single id="system_status">
+        <search>
+          <query>| `set-alarm("$state$")` | search alarm_state=* | table alarm_state</query>
+          <earliest>-1m@m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="count">10</option>
+        <option name="beforeLabel">ALARM IS CURRENTLY</option>
+        <option name="linkView">search</option>
+      </single>
+    </panel>
+  </row>
+</form>
